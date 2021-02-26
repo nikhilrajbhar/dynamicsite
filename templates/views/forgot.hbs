@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Forgot Page</title>
+</head>
+<body>
+     
+      <!-- header -->
+    <header class="cs-header navbar navbar-expand-lg navbar-light  navbar-floating navbar-sticky" data-scroll-header>
+        <div class="container px-0 px-xl-3">
+
+
+            <a class="navbar-brand" href="#"><i class="fa fa-telegram" style="font-size:24px; color: blue;"></i>
+                WaitlistApi</a>
+            <button class="navbar-toggler ml-n2 mr-2" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Docs <span class="sr-only">(current)</span></a>
+                    </li>
+
+
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <button type="button" class="btn btn-dark">Product of the day</button>
+                    <button type="button" data-toggle="modal" data-target="#myModal_1" class="btn btn-default">Sign in</button>
+                    <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-primary">Sign
+                        up</button>
+                </form>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Section  -->
+
+    <section>
+        <div class="container py-5 py-sm-6 py-md-7" style="margin-top: 50px!important;">
+            <div class="row justify-content-center pt-4">
+              <div class="col-lg-7 col-md-9 col-sm-11">
+                <h1 class="h2 pb-3">Forgot your password?</h1>
+                <p class="font-size-sm">Change your password in three easy steps. This helps to keep your new password secure.</p>
+                <ol type="A">
+                  <li>1. Fill in your email address below.</li>
+                  <li>2. We'll email you a temporary code.</li>
+                  <li>3. Use the code to change your password </li>
+                </ol>
+                <div class="rounded-lg px-3 py-4 p-sm-4">
+                  <form action="/forgot_password" method="POST">
+                <div class="form-group" id="recovery_group">
+                  <label class="form-label">Enter your email address</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter emails" name="email">
+                  <div class="invalid-feedback">Please provide a valid email address!</div>
+                </div>
+                <button class="btn btn-primary" >Get new password</button>
+              </form>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>

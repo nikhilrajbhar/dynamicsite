@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  li{
+	list-style: none;
+}
+
+#block1 {
+    
+    background-color:black;
+} 
+
+.section2 {
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+}
+
+.card-header{
+	font-size: 1.6rem;
+	font-weight: bold;
+	background: white;
+	padding: 25px 0;
+    border-radius: 50px;
+    color: white;
+}
+
+.money{
+	font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card-body li {
+
+    margin: 10px 0px;
+    
+}
+
+.section5{
+    color: black;
+    text-align: center;
+    padding: 40px 0px;
+    
+}
+
+.section5 a{
+    color: white;
+    text-align: center;
+    background-color: blue ;
+    padding: 10px 200px;
+    border-radius: 25px;
+    
+   
+    
+}

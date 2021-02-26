@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <title>Document</title>
+</head>
+<body>
+     
+     {{!-- {{>navbar}} --}}
+
+     <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body" style="font-size: large;">
+          <form action="/apiinfo" method="POST">
+            <label for="fname">Referral slots moving:</label>
+            <input type="text" id="fname" placeholder="slots moved " name="referal"><br><br>
+
+            <label for="websites">Websites URL form is placed</label>
+            <input type="text" id="websites" placeholder="https://getwaitlist.com/dashboard" name="websites"><br><br>
+
+           
+
+
+            
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!--  -->
+  <div class="wrapper">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <h3 style="margin: 20px;"><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Create waitlist</button></h3>
+      <ul> 
+          <a href="/apiinformation"></a>
+        <li><a href="http://127.0.0.1/apiinformation">API Information</a></li>
+        
+        <li>Statistics</li>
+        <li>About</a></li>
+        <li>Signups</li>
+        <li>Rewards</li>
+        <li>Webhooks</li>
+        <li>Offboard Waiters</li>
+      </ul>
+
+   {{!--  --}}
+
+    </div>
+    <div class="main_content" style="text-align: center;">
+      <div class="header" style="text-align: center;">Welcome!! Have a nice day.</div>
+      <div class="info" style="margin: auto; width: 80%; padding: 10px;text-align: left;border: 2px green;" >
+        <div>
+          <table>
+            <tr>
+              <th>
+                Information</th>
+              <th>Value</th>
+            
+            </tr>
+              <tr> 
+                <td>Referral slots moving</td>
+              <td>{{referal}} </td>
+              
+            </tr>
+             <tr>
+              <td>Registered website</td>
+              <td>{{websites}}</td>
+              
+            </tr>
+            <tr>
+              <td>API Key</td>
+              <td>degtr</td>
+              
+            </tr>
+          
+            <tr>
+              <td>Have Waitlist </td>
+              <td>y</td>
+           
+            </tr>
+            <tr>
+              <td>Have Waitlist verify new waiter</td>
+              <td>jty</td>
+              
+            </tr>
+            <tr>
+              <td>Created at</td>
+              <td>ytyti</td>
+             
+            </tr>
+           
+          </table>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+    <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>
